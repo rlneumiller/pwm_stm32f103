@@ -1,0 +1,1 @@
+Project to familiarize myself with Zephyr RTOS, Device Tree and Zephyr bindings while also understanding the capabilites of the stm32f103C8T6 bluepill clone I've recently obtained. See ZEPHYR_COMMIT_HASH.txt to enable rolling back the state of the Zephyr repo to the state it was in when this project was last built successfully.
