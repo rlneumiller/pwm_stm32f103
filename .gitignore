@@ -1,0 +1,44 @@
+# Ignore build directories
+build/
+zephyr/
+
+# Ignore generated files
+*.o
+*.d
+*.a
+*.out
+*.hex
+*.bin
+*.elf
+*.map
+*.lst
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+*.swn
+*.bak
+*.old
+*.orig
+*.rej
+
+# Ignore Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore VSCode settings
+#.vscode/
+
+# Ignore other IDE settings
+.idea/
+*.iml
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore user-specific files
+*.user

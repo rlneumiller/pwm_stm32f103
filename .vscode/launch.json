@@ -1,0 +1,30 @@
+{
+  "configurations": [
+  {
+    // Known good config to launch and debug
+    "name": "pwm_stm32f103 Debug",
+    "cwd": "${workspaceFolder}",
+    "executable": "/home/arrel/zp/pwm_stm32f103/build/zephyr/zephyr.elf",
+    "request": "launch",
+    "type": "cortex-debug",
+    "runToEntryPoint": "main",
+    "servertype": "openocd",
+    "device": "STM32F103C8",
+    "configFiles": [
+        "/home/arrel/zp/pwm_stm32f103/boards/others/stm32f103_bluepill/support/openocd.cfg",
+    ],
+    //"svdFile": "${workspaceFolder}/STM32F103.svd",
+    "preLaunchTask": "Build pwm_stm32f103 Project",
+    "postRestartCommands": [
+        "monitor reset halt",
+        "monitor reset init"
+    ],
+    "openOCDLaunchCommands": [
+        "init",
+        "reset init"
+    ],
+    "gdbPath": "/home/arrel/zephyr-sdk-0.17.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
+  "gdbTarget": "localhost:3333"
+  }
+  ]
+}

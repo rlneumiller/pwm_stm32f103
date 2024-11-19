@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "name": "zephyr",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../../zp/zephyr/include/**",
+                "${workspaceFolder}/../../zp/zephyr/include/zephyr/drivers",
+                "${workspaceFolder}/../../zp/zephyr/soc/arm/**",
+                "${workspaceFolder}/../../zp/zephyr/soc/st/stm32/stm32f1x/**",
+                "${workspaceFolder}/../../zp/zephyr/modules/**",
+                "${workspaceFolder}/../../zp/pwm_stm32f103/src/**",
+                "${workspaceFolder}/../../zp/pwm_stm32f103/boards/**",
+                "${workspaceFolder}/../../zp/zephyr/dts/**",
+                "${workspaceFolder}/../../zp/zephyr/dts/arm/**",
+                "${workspaceFolder}/../../zp/zephyr/dts/bindings/**"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "${workspaceFolder}/../../zp/zephyr/include/**",
+                    "${workspaceFolder}/../../zp/zephyr/include/zephyr/drivers",
+                    "${workspaceFolder}/../../zp/zephyr/soc/arm/**",
+                    "${workspaceFolder}/../../zp/zephyr/soc/st/stm32/stm32f1x/**",
+                    "${workspaceFolder}/../../zp/zephyr/modules/**",
+                    "${workspaceFolder}/../../zp/pwm_stm32f103/src/**",
+                    "${workspaceFolder}/../../zp/pwm_stm32f103/boards/**",
+                    "${workspaceFolder}/../../zp/zephyr/dts/**",
+                    "${workspaceFolder}/../../zp/zephyr/dts/arm/**",
+                    "${workspaceFolder}/../../zp/zephyr/dts/bindings/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+
+            "defines": [
+                //"CONFIG_BOARD_MY_CUSTOM_BOARD",
+                "CONFIG_SOC_SERIES_STM32F1",
+                "CONFIG_SOC_STM32F103X8",
+                "DT_COMPAT_ST_STM32F1",
+                "DT_COMPAT_ST_STM32_PWM"
+            ],
+            "compilerPath": "${workspaceFolder}/../../zephyr-sdk-0.17.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-arm",
+        }
+    ],
+    "version": 4
+}
