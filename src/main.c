@@ -1,8 +1,8 @@
 /**
  * @file main.c
- * @brief Main source file for the SimpleFOC project.
+ * @brief Main source file for the project.
  *
- * Using Zephyr RTOS Version 3.7.99
+ * See ZEPHYR_COMMIT_HASH.txt for the Zephyr commit hash used in this project.
  * 
  * Note: The GPIO and PWM drivers must be enabled by adding CONFIG_GPIO=y and CONFIG_PWM=y in in prj.conf.
  */
